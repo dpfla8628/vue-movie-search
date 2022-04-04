@@ -16,6 +16,7 @@
                     :src="posterSrc(movie.Poster)"
                     :alt="movie.Title"
                     :height="posterHeight(movie.Poster)">
+                    <!-- 이미지가 없는 경우 -->
                     <template
                         v-slot:placeholder>
                         <div style="background: lightgray; height: 100%;"></div>
