@@ -28,7 +28,8 @@ export default {
             // actions은 객체 return이 필요하다
             // eslint-disable-next-line no-async-promise-executor
             return new Promise(async resolve => {
-                const url = `http://www.omdbapi.com/?apikey=${API_KEY}&s=${state.title}&page=${pageNum}`
+                // 호스팅 할 경우 반드시 https로 설정
+                const url = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${state.title}&page=${pageNum}`
                 const res = await axios.get(url)
                 commit('pushIntoMovies', res.data.Search)
                 resolve(res.data) //반환

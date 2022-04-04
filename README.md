@@ -34,6 +34,15 @@ vue ui plugin에서 설치
 http://www.omdbapi.com/?i=tt3896198&apikey=e4aaee62
 - axios 설치 (npm install axios)
 
+## Hosting
+- FireBase를 통한 호스팅
+1. 홈페이지 접속 후 프로젝트 생성
+2. npm install -g firebase-tools
+3. firebase login
+4. firebase init
+    dist
+5. firebase deploy
+
 ## Project setup
 ```
 yarn install
